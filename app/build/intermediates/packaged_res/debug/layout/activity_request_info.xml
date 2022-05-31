@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_500"
+    tools:context=".RequestInfoActivity">
+
+    <TextView
+        android:id="@+id/titolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Titolo Richiesta"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/contR"
+        android:layout_width="358dp"
+        android:layout_height="181dp"
+        android:layout_marginTop="83dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="@color/white"
+        android:text="Descrizione della richiesta"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="177dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="64dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="Nome Richiedente"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contR" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="232dp"
+        android:layout_height="33dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        android:text="Numero di telefono del richiedete"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+    <TextView
+        android:id="@+id/dataR"
+        android:layout_width="85dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="21dp"
+        android:background="#FFFFFF"
+        android:backgroundTint="@color/white"
+        android:text="Data"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contR" />
+</androidx.constraintlayout.widget.ConstraintLayout>
