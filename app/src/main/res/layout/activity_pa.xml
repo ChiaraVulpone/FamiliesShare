@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PAActivity">
+
+    <TextView
+        android:id="@+id/nomePAText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:text="Nome e cognome"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imgPa"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/annoPaText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Anno di nascita"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/imgPa"
+        app:layout_constraintTop_toBottomOf="@+id/nomePAText" />
+
+    <TextView
+        android:id="@+id/necessPA"
+        android:layout_width="375dp"
+        android:layout_height="189dp"
+        android:layout_marginTop="15dp"
+        android:text="Inserire qua i bisogno specifici della persona da assistere"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgPa" />
+
+    <ImageView
+        android:id="@+id/imgPa"
+        android:layout_width="104dp"
+        android:layout_height="116dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
